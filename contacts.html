@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOMAZING 2.0</title>
+    <meta name="description" content="ОПИСАНИЕ САЙТА" />
+    <meta name="keywords" content="КЛЮЧЕВЫЕ СЛОВА НА САЙТЕ" />
+    <!-- OG Tags -->
+    <meta property="og:title" content="НАЗВАНИЕ САЙТА" />
+    <meta property="og:description" content="ОПИСАНИЕ САЙТА" />
+    <meta property="og:type" content="article" />
+    <!-- preview.jpg в папке img-->
+    <meta property="og:image" content="ССЫЛКА НА ПРЕВЬЮ КАРТИНКУ" />
+    <meta property="og:site_name" content="НАЗВАНИЕ САЙТА" />
+    <!-- FAVICON & APPLE-TOUCH -->
+    
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- SLICK SLIDER -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+<!-- MODAL WINDOW -->
+<div id="wrapper-modal" class="wrapper-modal">
+  <div id="overlay"></div>
+    <div id="modal-window">
+      <div class="modal-window__content">
+        <button type="button" class="btn select-btn close-btn" id="close-modal"></button>
+        <h2>Заказать обратный звонок</h2>
+        <form action="#" class="form-book form-val" id="modal-book">
+          <input type="text" class="form-book__input" placeholder="Имя" id="name" name="firstName" required>
+          <input type="mail" class="form-book__input" placeholder="E-mail" id="mail" name="mail" required>
+          <input type="tel" class="form-book__input" placeholder="Телефон" id="phone" name="phoneNumber" required>
+          <button class="btn select-btn button-form btn_green">Заказать звонок</button>
+        </form>
+    </div>
+    <div class="modal-window__success">
+      <h2>Отлично! Мы скоро вам перезвоним.</h2>
+      <button type="button" class="btn select-btn btn_white btn_center" id="close-modal">Закрыть</button>
+    </div>
+  </div>
+</div>
+<!-- STICKY MENU START -->
+<header>
+    <div class="container">
+      <nav id="navbar" class="navbar">
+        <div class="container container_menu">
+          <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="shop.html">Магазин</a></li>
+            <li><a href="about.html">О бренде</a></li>
+            <li><a href="contacts.html"><span class="currPage">Контакты</span></a></li>
+          </ul>
+          <div class="orderCall">
+            <button type="button" class="btn btn_call" id="open-modal"></button>
+            <a href="tel:+74958235412">+7 (495) 823-54-12</a>
+          </div>
+          <a href="cart.html" class="cart-a"><img src="assets/images/cart.png" alt="cart"></a>
+        </div>
+        <div class="mobmenu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="mobmenu">
+              <ul class="mobmenu__list">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="shop.html">Магазин</a></li>
+                <li><a href="about.html">О бренде</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+              </ul>
+        </div>
+      </nav>
+    </div>
+</header>
+<!-- STICKY MENU END -->
+<section class="contacts-page" id="contacts-page">
+  <div class="container">
+    <div class="offer-section">
+      <h1 class="offer-section__title">Контакты</h1>
+      <div class="breadcrumps">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><span>Контакты</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="map-wrapper">
+      Карта с любой точкой
+    </div>
+    <div class="contact">
+      <div class="contact__tel">
+        <span class="contact__text">Телефон</span>
+        <a href="tel:+380448235412">+38 (044) 823-54-12</a>
+      </div>
+      <div class="contact__mail">
+        <span class="contact__text">E-mail</span>
+        <a href="mailto:info@sitename.com">info@sitename.com</a>
+      </div>
+      <div class="contact__adress">
+        <span class="contact__text">Адрес</span>
+        <p class="adress">г. Киев, 3-я улица Строителей, 25</p>
+      </div>
+    </div>
+    <div class="contact-form-wrapper">
+      <h2 class="section-title">Напишите нам</h2>
+      <form action="#" class="contacts-book form-val" id="contacts-book">
+        <input type="text" class="contacts-book__input" placeholder="Имя" id="name" name="firstName" required>
+        <input type="mail" class="contacts-book__input" placeholder="E-mail" id="mail" name="mail" required>
+        <input type="tel" class="contacts-book__input" placeholder="Телефон" id="phone" name="phoneNumber" required>
+        <textarea cols="30" rows="10" placeholder="Сообщение" id="message" name="message" required></textarea>
+        <button class="btn select-btn button-form btn_green">Отправить</button>
+      </form>
+      <div class="contacts-success">
+        <p>Сообщение успешно отправлено</p>
+      </div>
+    </div>
+  </div> 
+</section>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-wrapper">
+      <div class="footer-wrapper__policy">
+        <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+        <span class="rights">© Все права защищены</span>
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Публичная оферта</a>
+      </div>
+      <div class="footer-wrapper__menu">
+        <div class="navigation">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="shop.html">Магазин</a></li>
+            <li><a href="about.html">О бренде</a></li>
+            <li><a href="contacts.html"><span class="currPage">Контакты</span></a></li>
+          </ul>
+        </div>
+        <div class="navigation_shop">
+          <ul>
+            <li><a href="#">Пальто</a></li>
+            <li><a href="#">Свитшоты</a></li>
+            <li><a href="#">Кардиганы</a></li>
+            <li><a href="#">Толстовки</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="links">
+        <div class="contacts">
+          <a href="tel:+380448235412">+38 (044) 823-54-12</a>
+          <a href="mailto:hello@womazing.com">hello@womazing.com</a>
+        </div>
+        <div class="social">
+          <a href="https://www.instagram.com/" rel="nofollow noopener noreferrer" target="_blank" >
+            <img src="assets/images/instagram.png" alt="instagram">
+          </a>
+          <a href="https://wwww.facebook.com/" rel="nofollow noopener noreferrer" target="_blank" >
+            <img src="assets/images/facebook.png" alt="facebook">
+          </a>
+          <a href="https://www.twitter.com/" rel="nofollow noopener noreferrer" target="_blank" >
+            <img src="assets/images/twitter.png" alt="twitter">
+          </a>
+        </div>
+        <div class="paysystem">
+          <img src="assets/images/paysystem.png" alt="paysystem">
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- JQUERY -->
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+
+<!-- SLICK SLIDER JS START -->
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="assets/js/jquery.validate.min.js"></script>
+<!-- JS -->
+<script src="assets/js/main.js"></script>
+</body>
+</html>

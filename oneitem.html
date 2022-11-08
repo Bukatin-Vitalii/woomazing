@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOMAZING 2.0</title>
+    <meta name="description" content="ОПИСАНИЕ САЙТА" />
+    <meta name="keywords" content="КЛЮЧЕВЫЕ СЛОВА НА САЙТЕ" />
+    <!-- OG Tags -->
+    <meta property="og:title" content="НАЗВАНИЕ САЙТА" />
+    <meta property="og:description" content="ОПИСАНИЕ САЙТА" />
+    <meta property="og:type" content="article" />
+    <!-- preview.jpg в папке img-->
+    <meta property="og:image" content="ССЫЛКА НА ПРЕВЬЮ КАРТИНКУ" />
+    <meta property="og:site_name" content="НАЗВАНИЕ САЙТА" />
+    <!-- FAVICON & APPLE-TOUCH -->
+    
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- SLICK SLIDER -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+<!-- MODAL WINDOW -->
+<div id="wrapper-modal" class="wrapper-modal">
+  <div id="overlay"></div>
+    <div id="modal-window">
+      <div class="modal-window__content">
+        <button type="button" class="btn select-btn close-btn" id="close-modal"></button>
+        <h2>Заказать обратный звонок</h2>
+        <form action="#" class="form-book form-val" id="modal-book">
+          <input type="text" class="form-book__input" placeholder="Имя" id="name" name="firstName" required>
+          <input type="mail" class="form-book__input" placeholder="E-mail" id="mail" name="mail" required>
+          <input type="tel" class="form-book__input" placeholder="Телефон" id="phone" name="phoneNumber" required>
+          <button class="btn select-btn button-form btn_green">Заказать звонок</button>
+        </form>
+    </div>
+    <div class="modal-window__success">
+      <h2>Отлично! Мы скоро вам перезвоним.</h2>
+      <button type="button" class="btn select-btn btn_white btn_center" id="close-modal">Закрыть</button>
+    </div>
+  </div>
+</div>
+<!-- STICKY MENU START -->
+<header>
+    <div class="container">
+      <nav id="navbar" class="navbar">
+        <div class="container container_menu">
+          <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="shop.html"><span class="currPage">Магазин</span></a></li>
+            <li><a href="about.html">О бренде</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <div class="orderCall">
+            <button type="button" class="btn btn_call" id="open-modal"></button>
+            <a href="tel:+74958235412">+7 (495) 823-54-12</a>
+          </div>
+          <a href="cart.html" class="cart-a"><img src="assets/images/cart.png" alt="cart"></a>
+        </div>
+        <div class="mobmenu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="mobmenu">
+              <ul class="mobmenu__list">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="shop.html">Магазин</a></li>
+                <li><a href="about.html">О бренде</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+              </ul>
+        </div>
+      </nav>
+    </div>
+</header>
+<!-- STICKY MENU END -->
+<section class="oneitem-page" id="oneitem-page">
+  <div class="container">
+    <div class="offer-section">
+      <h1 class="offer-section__title">Свитшот Sweet Shot</h1>
+      <div class="breadcrumps">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="#">Свитшоты</a></li>
+          <li><span>Свитшот Sweet Shot</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="one-item">
+      <div class="one-item__image">
+        <img src="assets/images/one-item.jpg" alt="one-item" class="one-item__img">
+      </div>
+      <div class="one-item__info">
+        <span class="one-item__price">$311</span>
+        <span class="one-item__price one-item__price_old">$450</span>
+        <form action="#" class="one-item__params" id="one-item__params">
+          <p class="one-item__text">Выберите размер</p>
+          <div class="size-buttons">
+            <button type="button" class="btn btn_one-item-size" id="btn_one-item-size">S</button>
+            <button type="button" class="btn btn_one-item-size active" id="btn_one-item-size">M</button>
+            <button type="button" class="btn btn_one-item-size" id="btn_one-item-size">L</button>
+            <button type="button" class="btn btn_one-item-size" id="btn_one-item-size">XL</button>
+            <button type="button" class="btn btn_one-item-size" id="btn_one-item-size">XXL</button>
+          </div>
+          <p class="one-item__text">Выберите цвет</p>
+          <div class="color-buttons">
+            <button type="button" class="btn btn_brown btn_one-item-color" id="btn_one-item-color"></button>
+            <button type="button" class="btn btn_gray btn_one-item-color active" id="btn_one-item-color"></button>
+            <button type="button" class="btn btn_pink btn_one-item-color" id="btn_one-item-color"></button>
+            <button type="button" class="btn btn_peach btn_one-item-color" id="btn_one-item-color"></button>
+          </div>
+          <div class="add-to-cart">
+            <input type="text" class="one-item__count" id="one-item__count" placeholder="1">
+            <button type="submit" class="btn btn_green" id="add-to-cart">Добавить в корзину</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="related-products-wrapper">
+      <h2 class="section-title">Связанные товары</h2>
+      <div class="collection">
+        <div class="collection__item">
+          <div class="item-image">
+            <img src="assets/images/item1.jpg" alt="item1">
+            <div class="item-overlay">
+              <div class="item-overlay__image">
+                <a href="oneitem.html" class="arrow-overlay"><img src="assets/images/arrow-overlay.svg" alt="arrow-overlay"></a>
+              </div>
+            </div>
+          </div>
+          <h3 class="collection__item__title">Футболка USA</h3>
+          <span class="price price_old">$229</span>
+          <span class="price">$129</span>
+        </div>
+        <div class="collection__item">
+          <div class="item-image">
+            <img src="assets/images/item2.jpg" alt="item2">
+            <div class="item-overlay">
+              <div class="item-overlay__image">
+                <a href="oneitem.html" class="arrow-overlay"><img src="assets/images/arrow-overlay.svg" alt="arrow-overlay"></a>
+              </div>
+            </div>
+          </div>
+          <h3 class="collection__item__title">Купальник Glow</h3>
+          <span class="price">$129</span>
+        </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-wrapper">
+      <div class="footer-wrapper__policy">
+        <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+        <span class="rights">© Все права защищены</span>
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Публичная оферта</a>
+      </div>
+      <div class="footer-wrapper__menu">
+        <div class="navigation">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="shop.html"><span class="currPage">Магазин</span></a></li>
+            <li><a href="about.html">О бренде</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="navigation_shop">
+          <ul>
+            <li><a href="#">Пальто</a></li>
+            <li><a href="#">Свитшоты</a></li>
+            <li><a href="#">Кардиганы</a></li>
+            <li><a href="#">Толстовки</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="links">
+        <div class="contacts">
+          <a href="tel:+380448235412">+38 (044) 823-54-12</a>
+          <a href="mailto:hello@womazing.com">hello@womazing.com</a>
+        </div>
+        <div class="social">
+          <a href="https://www.instagram.com/" rel="nofollow noopener noreferrer" target="_blank" >
+            <img src="assets/images/instagram.png" alt="instagram">
+          </a>
+          <a href="https://wwww.facebook.com/" rel="nofollow noopener noreferrer" target="_blank" >
+            <img src="assets/images/facebook.png" alt="facebook">
+          </a>
+          <a href="https://www.twitter.com/" rel="nofollow noopener noreferrer" target="_blank" >
+            <img src="assets/images/twitter.png" alt="twitter">
+          </a>
+        </div>
+        <div class="paysystem">
+          <img src="assets/images/paysystem.png" alt="paysystem">
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- JQUERY -->
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+
+<!-- SLICK SLIDER JS START -->
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="assets/js/jquery.validate.min.js"></script>
+<!-- JS -->
+<script src="assets/js/main.js"></script>
+</body>
+</html>
